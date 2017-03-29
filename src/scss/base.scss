@@ -1,4 +1,9 @@
-@import "~normalize.css";
+@import "./libraries/normalize";
+// @import "~/normalize-scss/sass/normalize";
+
+h1 {
+  font-size: 200px;
+}
 
 p {
   font-size: 100px;

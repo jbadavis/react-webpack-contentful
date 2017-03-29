@@ -9,7 +9,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, './dist/assets'),
     filename: '[name].bundle.js',
-    publicPath: '/assets',                          // New
+    publicPath: '/assets',
   },
   devServer: {
     contentBase: path.resolve(__dirname, './src'),
@@ -25,13 +25,23 @@ module.exports = {
         }],
       },
       {
-        test: /\.(sass|scss)$/,
-        use: [
-          'style-loader',
-          'css-loader',
-          'sass-loader',
-        ]
+        test: /\.(sass|scss|css)$/,
+        use: [{
+          loader: "style-loader"
+        }, {
+          loader: "css-loader",
+          options: {
+            module: true,
+            localIdentName: '[name]__[local]--[hash:base64:5]',
+            importLoaders: 1,
+          }
+        }, {
+          loader: "sass-loader"
+        }]
       },
     ],
+  },
+  resolve: {
+    modules: [path.resolve(__dirname, './src'), 'node_modules']
   },
 };
