@@ -1,10 +1,6 @@
 @import "./libraries/normalize";
 // @import "~/normalize-scss/sass/normalize";
 
-h1 {
-  font-size: 200px;
-}
+@import "./variables/colours";
 
-p {
-  font-size: 100px;
-}
+@import "./typography/typography";

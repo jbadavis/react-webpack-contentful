@@ -26,6 +26,7 @@
     "babel-preset-react": "^6.16.0",
     "babel-preset-stage-0": "^6.22.0",
     "babel-register": "^6.18.0",
+    "contentful": "^4.1.1",
     "moment": "^2.18.1",
     "normalize.css": "file:node_modules/normalize.css",
     "react": "^15.4.2",
