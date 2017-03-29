@@ -2,6 +2,8 @@ import React from 'react';
 import PostTile from '../post-tile/post-tile'
 import * as dataService from '../../../js/data-service'
 
+import styles from './posts.scss';
+
 export default class Posts extends React.Component {
   constructor() {
     super();
@@ -15,7 +17,7 @@ export default class Posts extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className={styles.posts}>
         {this.state.posts.length !== 0 ? this.state.posts.map((post, i) => {
             return <PostTile post={post} key={i} />
           }) : null}

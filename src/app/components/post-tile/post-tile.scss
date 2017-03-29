@@ -1,0 +1,24 @@
+:local {
+  .post {
+    background: #e8eef7;
+    margin-bottom: 20px;
+    padding: 20px;
+    width: 360px;
+  }
+
+  .post:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  .postTitle {
+    margin-bottom: 20px;
+  }
+
+  .postText {
+    margin-bottom: 40px;
+  }
+
+  .postImage {
+    width: 50%;
+  }
+}
