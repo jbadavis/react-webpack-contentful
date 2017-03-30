@@ -16,11 +16,11 @@ export default class Posts extends React.Component {
   };
 
   render() {
+    const Posts = (this.state.posts.map((post, i) => <PostTile post={post} key={i} />))
+
     return (
       <div className={styles.posts}>
-        {this.state.posts.length !== 0 ? this.state.posts.map((post, i) => {
-            return <PostTile post={post} key={i} />
-          }) : null}
+        {Posts !== 0 ? Posts : null}
       </div>
     )
   };
