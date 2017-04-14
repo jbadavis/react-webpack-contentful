@@ -1,8 +1,10 @@
 :local {
   .post {
     background: #e8eef7;
+    height: 370px;
     margin-bottom: 20px;
     padding: 20px;
+    position: relative;
     width: 360px;
   }
 
@@ -19,6 +21,12 @@
   }
 
   .postImage {
-    width: 50%;
+    height: 50%;
+  }
+
+  .postCategory {
+    bottom: 20px;
+    left: 20px;
+    position: absolute;
   }
 }

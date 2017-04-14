@@ -8,6 +8,7 @@ const PostTile = props => {
       <h2 className={styles.postTitle}>{props.post.fields.title}</h2>
       <p className={styles.postText}>{props.post.fields.bodyText}</p>
       <img className={styles.postImage} src={props.post.fields.mainImage.fields.file.url} />
+      <h3 className={styles.postCategory}>{props.post.fields.category.fields.title}</h3>
     </div>
   )
 };
