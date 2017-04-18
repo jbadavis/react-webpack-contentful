@@ -28,8 +28,8 @@
     "babel-register": "^6.18.0",
     "contentful": "^4.1.1",
     "moment": "^2.18.1",
-    "normalize.css": "file:node_modules/normalize.css",
     "react": "^15.4.2",
-    "react-dom": "^15.4.2"
+    "react-dom": "^15.4.2",
+    "react-router-dom": "^4.1.1"
   }
 }
