@@ -1,6 +1,6 @@
 import React from 'react';
-import PostTile from '../post-tile/post-tile'
-import * as dataService from '../../../js/data-service'
+import PostTile from '../post-tile/post-tile';
+import * as dataService from '../../../js/data-service';
 
 import styles from './posts.scss';
 
@@ -16,12 +16,12 @@ export default class Posts extends React.Component {
   };
 
   render() {
-    const Posts = (this.state.posts.map((post, i) => <PostTile post={post} key={i} />))
+    const Posts = (this.state.posts.map((post, i) => <PostTile post={post} key={i} />));
 
     return (
       <div className={styles.posts}>
         {Posts !== 0 ? Posts : null}
       </div>
-    )
+    );
   };
 };

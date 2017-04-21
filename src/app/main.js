@@ -1,7 +1,7 @@
-import React from 'react'
+import React from 'react';
 
-import Header from './components/header/header'
-import Posts from './components/posts/posts'
+import Header from './components/header/header';
+import Posts from './components/posts/posts';
 
 export default class Main extends React.Component {
   render() {
@@ -10,6 +10,6 @@ export default class Main extends React.Component {
         <Header />
         <Posts />
       </div>
-    )
+    );
   }
 }

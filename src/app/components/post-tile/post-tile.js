@@ -12,7 +12,7 @@ const PostTile = props => {
       <img className={styles.postImage} src={imgUrl} />
       <h3 className={styles.postCategory}>{props.post.fields.category.fields.title}</h3>
     </div>
-  )
+  );
 };
 
 export default PostTile;
